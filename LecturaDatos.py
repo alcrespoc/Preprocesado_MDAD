@@ -21,7 +21,7 @@ for barrio in barrios['results']['bindings']:
     poligonos_barrios.append(poligono)
 
 # Comprobamos en que poligono (barrio) se encuentra ubicado la farola, recorriendo todos los poligonos
-# y en caso de no pertenecer a ninguno (Carretera de la montaña) nos dira que pertenece a un barrio desconocido
+# y en caso de no pertenecer a ninguno (Carretera del santuario de la Montana) nos dira que pertenece a un barrio desconocido
 for index, row in farolas.iterrows():
     point = Point(row['geo_lat'], row['geo_long'])
     ha_encontrado_punto = False
